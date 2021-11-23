@@ -1,9 +1,3 @@
-
-
-
-
-
-
 function computerPlay() {
   let randomNumber = Math.floor(Math.random() * 3) + 1;
 
@@ -37,3 +31,11 @@ function playRound(playerSelection, computerSelection) {
   if (playeroption == "scissors" && computerSelection == "scissors")
     return "Tie!"
 }
+
+function game() {
+  for (let counts = 0; counts < 5; counts++) {
+    console.log(playRound(prompt("Choose: Rock, Papper or Scissors"), computerPlay()))
+  }
+}
+
+game()
