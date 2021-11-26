@@ -30,12 +30,9 @@ function playRound(playerSelection, computerSelection) {
     return "Tie! Result: " + playerScore + ":" + computerScore;
 }
 
-function game() {
-  while (playerScore < 5 && computerScore < 5) {
-    
-  }
-}
-
 let playerScore = 0;
 let computerScore = 0;
 
+while (playerScore < 5 && computerScore < 5) {
+    
+}
