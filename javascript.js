@@ -33,6 +33,12 @@ function playRound(playerSelection, computerSelection) {
 let playerScore = 0;
 let computerScore = 0;
 
-while (playerScore < 5 && computerScore < 5) {
-    
-}
+const buttons = document.querySelectorAll('button');
+
+buttons.forEach((button) => {
+  button.addEventListener('click', () => {
+    if (button.id == 1) console.log(playRound('rock', computerPlay()));
+    if (button.id == 2) console.log(playRound('papper', computerPlay()));
+    if (button.id == 3) console.log(playRound('scissors', computerPlay()));
+  });
+});
